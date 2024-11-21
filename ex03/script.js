@@ -24,7 +24,17 @@ function task2() {
 // Write your task 3 code inside this function!
 function task3() {
   console.log("Running task 3");
+
+  let parent = document.querySelector(".box.flex")
+  let firstEl = document.querySelector("#item1")
+  
+  let newNode = document.createElement("p")
+  newNode.textContent = "this is a new thing"
+  newNode.classList.add("item")
+  parent.insertBefore(newNode, firstEl)
+  parent.appendChild(newNode)
 }
+
 
 // Don't change this function
 function handleHover(event) {
