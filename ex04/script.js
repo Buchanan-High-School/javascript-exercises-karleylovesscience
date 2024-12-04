@@ -1,8 +1,8 @@
 function task1() {
-  let myArray = [];
+  let myArray = ["eggs", "laney", "my cats", "salt"];
   // This will run when you click the button.
   myArray.forEach((item) => {
-    let el = document.createElement("p");
+    let el = document.createElement("task1");
     el.innerText = item;
     target.appendChild(el);
   });
@@ -10,6 +10,7 @@ function task1() {
 
 function task2A() {
   // Write your code in here
+  let elements = document.querySelectorAll("#color-list li")
 }
 
 function task2B() {
